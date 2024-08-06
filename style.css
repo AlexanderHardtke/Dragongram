@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: medieval;
+    font-size: 20px;
+}
+
+h2 {
+    margin-bottom: 12px;
+}
+
+.postAuthor {
+    display: flex;
+}
+
+.d-none {
+    display: none;
+}
+
+.mainSection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.seperatorMid {
+    background-color: lightgrey;
+    width: 470px;
+    box-shadow: 0 0 1px 1px lightgray;
+    margin-bottom: 28px;
+    height: 1px;
+}
+
+.users {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    top: 36px;
+    width: 250px;
+}
+
+.friends {
+    margin: 2px 0 6px 10px;
+    color: grey;
+    font-size: 18px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-block-end: 6px;
+}
+
+.profilLogoPost {
+    height: 34px;
+    width: 34px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-inline-end: 6px;
+}
+
+.author {
+    font-weight: 600;
+}
+
+.location {
+    font-size: 18px;
+}
+
+.postedImage {
+    width: 468px;
+    height: 468px;
+    object-fit: cover;
+}
+
+.logoPost {
+    height: 20px;
+    padding-right: 6px;
+}
+
+.post {
+    /* display: inline; */
+    width: 468px;
+    margin-bottom: 20px;
+    font-family: MedievalSharp;
+    margin-block-end: 0;
+}
+
+.comments {
+    display: block;
+    border: none;
+    background-color: transparent;
+    color: gray;
+    cursor: pointer;
+    font-family: MedievalSharp;
+}
+
+.comment {
+    width: 424px;
+    border: none;
+    resize: none;
+    font-family: MedievalSharp;
+    color: gray;
+}
+
+.comment:focus-visible {
+    outline: none;
+}
+
+.moreButton {
+    border: none;
+    background-color: transparent;
+    color: gray;
+    cursor: pointer;
+    font-family: MedievalSharp;
+}
+
+.postButton {
+    height: 28px;
+}
+
+.overlay {
+    z-index: 1;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlayImage {
+    max-width: 60%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.commentOverlay {
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.commentBox {
+    border: none;
+    resize: none;
+    font-family: MedievalSharp;
+    color: gray;
+    max-width: 100%;
+    padding-left: 4px;
+}
+
+.commentSection {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    flex-direction: row;
+    width: 80%;
+    max-height: 80%;
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    z-index: 2;
+}
+
+.showOverlay {
+    display: flex;
+}

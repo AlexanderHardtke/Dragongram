@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragongram</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo/D_red.png">
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="header.css" rel="stylesheet">
+    <link href="responsive.css" rel="stylesheet">
+    <link href="fonts.css" rel="stylesheet">
+</head>
+
+<body onload="loadPage()">
+
+    <div w3-include-html="header.html">
+    </div>
+
+    <a href="index.html"><img class="logoIconSmall d-none" src="./img/logo/DG.png"></a>
+
+    <section class="mainSection">
+        <h2>Drachenbeiträge</h2>
+
+        <div id="postContainer"></div>
+    </section>
+
+    <div class="users">
+        <a class="user"><img class="profilLogo"
+                src="./img/logo//friends/Alexander.jpg"><span>Alexander</span></a>
+        <span class="friends">Deine Freunde</span>
+        <a class="user"><img class="profilLogo" src="./img/logo/friends/bahamut.jpg"><span>Bahamut</span></a>
+        <a class="user"><img class="profilLogo" src="./img/logo/friends/drako.jpg"><span>Drako</span></a>
+        <a class="user"><img class="profilLogo"
+                src="./img/logo/friends/siegfried.png"><span>SiegfriedDragonslayer</span></a>
+        <a class="user"><img class="profilLogo" src="./img/logo/friends/princess.png"><span>Dragonprincess
+                Aerie</span></a>
+        <a class="user"><img class="profilLogo" src="./img/logo/friends/l33t.png"><span>L33tDr4gonGam34r</span></a>
+    </div>
+
+    <div onclick="hideOverlay()" class="overlay" id="overlay"></div>
+    <div class="commentSection" id="commentSection"></div>
+    <input class="d-none" id="searchInput" type="search" placeholder="No Function">
+
+</body>

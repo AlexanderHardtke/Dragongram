@@ -1,0 +1,34 @@
+body {
+    scroll-behavior: smooth;
+    font-family: medieval;
+    font-size: 20px;
+    margin: 0;
+}
+
+.mainSection {
+    font-family: MedievalSharp;
+    margin-top: 10px;
+    margin-left: 212px;
+    margin-right: 12px;
+}
+
+
+
+@media (max-width:1050px) {
+    .mainSection {
+        margin-left: 72px;
+    }
+}
+
+@media (max-width:700px) {
+    .mainSection {
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+        align-items: center;
+    }
+
+    body {
+        font-size: 16px;
+    }
+}

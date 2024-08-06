@@ -1,0 +1,172 @@
+h1 {
+    font-size: 44px;
+    padding-bottom: 12px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    top: 0;
+    color: white;
+    background-color: #c20000;
+    width: 200px;
+    height: 100vh;
+}
+
+a {
+    cursor: pointer;
+}
+
+.fakeSearch {
+    margin-bottom: 16px;
+}
+
+.seperator {
+    position: fixed;
+    left: 200px;
+    height: 100vh;
+    width: 2px;
+    background-color: black;
+}
+
+.logoIcon {
+    height: 120px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.logo {
+    height: 30px;
+    padding-right: 16px;
+    padding-left: 10px;
+}
+
+.profilLogo {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    margin-inline-start: 5px;
+    margin-inline-end: 8px;
+    object-fit: cover;
+}
+
+input {
+    position: fixed;
+    top: 338px;
+    left: 10px;
+    border: none;
+    font-family: MedievalSharp;
+    font-size: 18px;
+}
+
+@media (max-width:1050px) {
+    h1 {
+        display: none;
+    }
+
+    header {
+        align-items: center;
+    }
+
+    .logoIcon {
+        display: none;
+    }
+
+    header {
+        width: 60px;
+    }
+
+    .seperator {
+        left: 60px;
+    }
+
+    span {
+        display: none;
+    }
+
+    .logo {
+        padding-top: 30px;
+    }
+
+    .logoIconSmall {
+        display: block;
+        position: fixed;
+        height: 24px;
+        top: 10px;
+        left: 4px;
+    }
+
+    .fakeSearch {
+        margin-bottom: 0;
+    }
+
+    input {
+        top: 155px;
+        left: 61px;
+        background: initial;
+        border: ridge black;
+        background-color: #c20000;
+        color: white;
+
+    }
+
+    input::placeholder {
+        color: white;
+    }
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: row-reverse;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        left: 0;
+        top: unset;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    .seperator {
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: 50px;
+    }
+
+    .logo {
+        height: 30px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .logoIconSmall {
+        position: absolute;
+        filter: invert(1);
+        top: 22px;
+        left: 10px;
+    }
+
+    .profilLogo {
+        height: 30px;
+        width: 30px;
+        margin-top: 28px;
+    }
+
+    input {
+        top: auto;
+        bottom: 51px;
+        left: 4px;
+    }
+}
